@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(287.56deg, rgb(114, 136, 101) 0%, rgb(50, 63, 51) 100%);
+}
+
+#menu-h {
+    width: 100%;
+    height: 62px;
+    background-color: black;
+
+}
+
+#menu-h ul {
+    list-style: none;
+    position: relative;
+    margin-left: 270px;
+}
+
+#menu-h ul li{
+    width: 150px;
+    float: left;
+}
+
+#menu-h ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: background .4s;
+    text-align: center;
+}
+
+#menu-h ul li ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+}
+
+#menu-h ul li:hover ul {
+    visibility: visible;
+    left: 180px;
+}
+
+#menu-h a:hover {
+   background-color: rgb(10, 116, 7);
+   color: white;
+}
+
+#menu-h ul ul li {
+    float: none;
+    border-bottom: solid 1px ;
+}
+
+#menu-h ul ul li a {
+    background-color: rgb(19, 70, 17);
+    right: 50px;
+}
+
+#entrar {
+    float: none;
+    background-color: rgb(10, 116, 7);
+    position: absolute ;
+    left: 1009.5px;
+    top: 0px;
+}
+
+.search-box {
+    position: absolute;
+    top: 5px;
+    left: 620px;
+
+    background: white;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-text {
+    
+    background: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(10, 116, 7) ;
+    
+    width: 0;
+
+    transition: 0.4s;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lupa-branca {
+    display: none;
+}
+
+.search-box:hover > .search-text {
+    width: 290px;
+    padding-left: 20px;
+}
+
+.search-box:hover > .search-btn {
+    background: rgb(10, 116, 7) ;
+}
+
+.search-box:hover > .search-btn .lupa-green {
+    display: none;
+}
+
+.search-box:hover > .search-btn .lupa-branca {
+    display: block;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(10, 116, 7) ;
+}
+
+
+.ret1 {
+    position: absolute;
+    width: 440px;
+    height: 0px;
+    left: 490px;
+    top: 50px;
+    background: transparent;
+    border-radius: 33.6842px;
+}
+
+.fazer-txt {
+    position: absolute;
+    left: 43px;
+    top: 50px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: black;
+}
+
+.digite-txt {
+    position: absolute;
+    height: 46px;
+    left: 43px;
+    width: 322px;
+    top: 80px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: black;
+}
+
+.imput {
+    position: absolute;
+    width: 365px;
+    height: 40px ;
+    left: 38.5px;
+    top: 145px;
+
+    color: black;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+ 
+    border-radius: 30px;
+    border: none;
+    mix-blend-mode: overlay;
+    background: #E3E2E2;
+    padding: 25px;
+}
+
+.imput-senha {
+    position: absolute;
+    width: 365px;
+    height: 50px ;
+    left: 38.5px;
+    top: 205px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    border-radius: 30px;
+    border: none;
+    mix-blend-mode: overlay;
+    background: #E3E2E2; 
+    padding: 25px;
+    color: black;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.line {
+    position: absolute;
+    width: 365px;
+    height: 0.5px ;
+    left: 38.5px;
+    top: 360px;
+    
+    mix-blend-mode: normal;
+    border: 2px solid rgb(10, 116, 7, 0.3);
+    background-color: rgb(10, 116, 7);
+    border-radius: 30px;
+}
+
+.imput-login {
+    position: absolute;
+    width: 365px;
+    height: 50px ;
+    left: 38.5px;
+    top: 280px;
+    cursor: pointer;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    background: linear-gradient(90.61deg, #36b43b 15.7%, #568341 96.23%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    border: none;    
+    color: white;
+}
+
+.imput-email {
+    position: absolute;
+    width: 365px;
+    height: 50px ;
+    left: 38.5px;
+    top: 385px;
+    cursor: pointer;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    mix-blend-mode: normal;
+    border: 2px solid #292929;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: transparent;
+}
+
+.imput-google {
+    position: absolute;
+    width: 365px;
+    height: 50px ;
+    left: 38.5px;
+    top: 445px;
+    cursor: pointer;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    mix-blend-mode: normal;
+    border: 2px solid #292929;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: transparent;
+}
+
+.logogg {
+    position: absolute;
+    left: 106px;
+    top: 458px;
+}
+
+.imput-facebook {
+    position: absolute;
+    width: 365px;
+    height: 50px ;
+    left: 38.5px;
+    top: 505px;
+    cursor: pointer;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    mix-blend-mode: normal;
+    border: 2px solid #292929;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: transparent;
+}
+
+.logofb {
+    position: absolute;
+    left: 96px;
+    top: 518px;
+}
+
+.windev-logo{
+    position: absolute;
+    top: 80px;
+    width: 65px;
+    left: 10px;
+}
